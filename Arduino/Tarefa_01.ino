@@ -5,11 +5,11 @@
 
 int state;
 unsigned long old;
-unsigned long dif1;
-unsigned long dif2;
+unsigned long dif1 = 1000;
+unsigned long dif2 = 1000;
 int but1;
 int but2;
-int timez;
+int delayBetween = 1000;
 
 void setup() {
   // put your setup code here, to run once:
@@ -21,14 +21,8 @@ void setup() {
   Serial.begin(9600);
   
   state = 1;
-  old = millis();
-  timez = 1000;
   
-  but1 = digitalRead(KEY1);
-  but2 = digitalRead(KEY2);
-
-  dif1 = millis();
-  delay(600);
+  dif1 = 1000 + millis();
   dif2 = millis();
   
 }
@@ -54,39 +48,30 @@ void loop() {
   }*/
   
   unsigned long now = millis();
-  if(now>=old+timez) {
+  
+  int b1 = digitalRead(KEY1);
+  int b2 = digitalRead(KEY2);
+  
+  if((now>=old+delayBetween) && (b1 == 0)) {
+    delayBetween -= 10;
+    but1 = now;
+  }
+
+  if ((now>=old+delayBetween) && (b2 == 0)) {
+    delayBetween += 10;
+    but2 = now; 
+  }
+  
+  if (now >= old + delayBetween) {
     old = now;
     state = !state;
     digitalWrite(LED_PIN, state);
   }
   
-  Serial.println(timez);
-
-    boolean flag1 = false;
-    boolean flag2 = false;
-  
-  if(digitalRead(KEY1) != but1) {
-    dif1 = millis();
-    flag1 = true;
-  } 
-  
-  Serial.println(timez);
-  
-  if(digitalRead(KEY2) != but2) {
-    dif2 = millis();
-    flag2 = true;
-  } 
-  
-  Serial.println(flag1);
-  Serial.println(flag2);
-  
-  
-
-  if (dif2 - dif1 <= 500) {
-    digitalWrite(LED_PIN, HIGH);
+  int interval = abs(but1 - but2);
+  if (interval <= 500) {
     while(1);
   }
-  
 
   }
 
