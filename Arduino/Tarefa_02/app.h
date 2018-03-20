@@ -1,1 +1,0 @@
-void appinit(void);
