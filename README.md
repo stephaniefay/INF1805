@@ -11,4 +11,4 @@
 |Descrição| Link |
 |--|--|
 | Exercícios em Arduino | https://github.com/stephaniefay/INF1805/tree/master/Arduino |
-| Trabalho-1 | |
+| Mini Projetos | https://github.com/stephaniefay/INF1805/tree/master/MiniProjetos |
