@@ -2,19 +2,16 @@
 **Aulas (01/??);** Exercícios desenvolvidos em aula (ou em casa) a partir das tarefas propostas.
 
  - **Tarefa 1**
-Piscar o LED a cada 1 segundo
-
-Botão 1: Acelerar o pisca-pisca a cada pressionamento 
-
-Botão 2: Desacelerar a cada pressionamento 
-
-Botão 1+2 (em menos de 500ms): Parar
+Piscar o LED a cada 1 segundo<br>
+Botão 1: Acelerar o pisca-pisca a cada pressionamento <br>
+Botão 2: Desacelerar a cada pressionamento <br>
+Botão 1+2 (em menos de 500ms): Parar<br>
 
  - **Tarefa 2**
-Implementar “event_driven.ino” (observer)
+Implementar “event_driven.ino” (observer)<br>
+Tratador para botões da placa (observer)<br>
+~~2 timers~~ 1 timer<br>
+Reimplementar os exemplos com orientação a eventos:  Hello World: Input, Tarefa 1<br>
 
-Tratador para botões da placa (observer)
-
-~~2 timers~~ 1 timer
-
-Reimplementar os exemplos com orientação a eventos:  Hello World: Input, Tarefa 1
+ - **Tarefa 3**
+Colocar chamada a enterSleep() dentro do loop() da aplicação mostrada, acordando por interrupções geradas pelas chaves<br> aplicação: led iluminado quando chave apertada 
