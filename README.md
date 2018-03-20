@@ -1,13 +1,10 @@
 
 # INF1805
 
-> Tópicos em Engenharia da Computação V (Sistemas Reativos)
-
-> Professora: Noemi Rodriguez
-
-Período feito: 2018.1
-
-[Site da Disciplina](http://www.inf.puc-rio.br/~noemi/sr-18)
+> Tópicos em Engenharia da Computação V (Sistemas Reativos)<br>
+> Professora: Noemi Rodriguez<br>
+> Período feito: 2018.1<br>
+> [Site da Disciplina](http://www.inf.puc-rio.br/~noemi/sr-18)
 
 ----------
 
