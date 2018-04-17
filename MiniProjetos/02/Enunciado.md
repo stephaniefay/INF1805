@@ -1,4 +1,4 @@
-usar estrutura anterior para desenvolver um jogo mais sofisticado
-ï entrega em 22/4 ï github
-ï zip de arquivos pelo ead ï
-apresentaÁ„o em 24/4
+Utilizar a estrutura de corotinas para criar um jogo mais sofisticado em L√∂ve2D/Lua<br>
+
+**Entrega:** 22/01/2018 GitHub e envio de zip no EAD<br>
+**Apresenta√ß√£o:** 24/04/2018 en sala de aula (n√£o esquecer ppt)
