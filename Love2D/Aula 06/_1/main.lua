@@ -14,7 +14,7 @@ end
 function love.load()
   controle = false
   mqtt_client = mqtt.client.create("test.mosquitto.org", 1883, mqttcb)
-  mqtt_client:connect("1721631_1")
+  mqtt_client:connect("id_canal")
   mqtt_client:subscribe({"apertou-tecla"})
 end
 
