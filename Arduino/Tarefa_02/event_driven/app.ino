@@ -45,12 +45,6 @@ boolean bothButtonsPressed(){
   return false;
 }
 
-boolean checkPressed(){
-  if(bt1 != -1 && bt2 != -1)
-    return true;
-  return false;
-}
-
 boolean checkInterval(){
   long intervalo = abs(bt1 - bt2);
 
