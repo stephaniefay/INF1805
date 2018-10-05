@@ -1,4 +1,4 @@
-
+﻿
 # INF1805
 
 > Tópicos em Engenharia da Computação V (Sistemas Reativos)<br>
@@ -12,4 +12,3 @@
 |--|--|
 | Exercícios em Arduino | https://github.com/stephaniefay/INF1805/tree/master/Arduino |
 | Exercícios em Love2D | https://github.com/stephaniefay/INF1805/tree/master/Love2D |
-| Mini Projetos | https://github.com/stephaniefay/INF1805/tree/master/MiniProjetos |
